@@ -11,29 +11,29 @@ Call the Timer.js in your html file.
 
 Call Timer class from Timer.js
 ```js
- var Timer = new Timer();
+ var timer = new Timer();
 ```
 then set a date which must be greater than now
 ```js
- Timer.setFutureTime("2020 04 11 14:35:00");
+ timer.setFutureTime("2020 04 11 14:35:00");
 ```
 Call this function to show differences in your html element (id="timer")
 ```js
- Timer.displayDiff();
+ timer.displayDiff();
 ```
 Write the function to be called when time is over
 ```js
-   Timer.thenDo = function () {
+   timer.thenDo = function () {
         alert("it is time to show something");
       };
 ```
 
 Full Example:
 ```js
-var Timer = new Timer();
-    Timer.setFutureTime("2020 04 11 14:35:00");
-    Timer.displayDiff();
-    Timer.thenDo = function () {
+var timer = new Timer();
+    timer.setFutureTime("2020 04 11 14:35:00");
+    timer.displayDiff();
+    timer.thenDo = function () {
       alert("it is time to show something");
     };
 ```
